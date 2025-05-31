@@ -1,25 +1,86 @@
+
 <!doctype html>
 <html lang="en">
   <head>
-    <link href="styles.css" type="text/css" rel="stylesheet">
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device.width, initial-scale=1">
+		<link href="styles/habits.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- installation of Font Awesome: https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
+		<script src="scripts/script.js"></script>
+    <script src="scripts/streakOne.js"></script>
+    <script src="scripts/streakTwo.js"></script>
+    <script src="scripts/streakThree.js"></script>
+    <script src="scripts/streakFour.js"></script>
+    <script src="scripts/streakFive.js"></script>
+    <script src="scripts/streakSix.js"></script>
   </head>
 <body>
-    <div id="nav">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="habit.html">Your Habits</a></li>
-        <li><a href="insights.html"> Insights</a></li>
-      </ul>
-    </div>
-    <main>
-        <section class="container">
-            <h1>All the cats</h1>
-    	    
+    
+  <header>
 
-            <h1>And the moose</h1>
-            <!-- <img id="moose" src="resources/moose.jpg" width="510px" height="382px"> -->
-        </section>
+    <button onclick="LinkToHome()" type="button" class="addMore" title="Home"> <i class="fa fa-home fa-2x"></i> </button>
+		<button onclick="LinkToHabits()" type="button" class="addMore" title="Your Habits"> <i class=" fa fa-repeat fa-2x"> </i> </button> 
+		<button onclick="LinkToTips()" type="button" class="addMore" title="Tips and Links"> <i class="fa fa-lightbulb-o fa-2x"></i> </button> 
+		<h1> My Habits</h1>
+
+  </header>
+
+
+
+
+    <main>
+       <div class="grid"> 
+         <div> <h4>  <script> document.write(streakOne)</script> </h4> 
+          <p>Day Streak </p> 
+          <p>Habit 1:</p>
+          <p> Wash Hair</p>
+          <button onclick="addOne()" type="button"> Increase Streak</button>
+        </div>
+        
+        <div> 
+          <h4>  <script> document.write(streakTwo)</script> </h4> 
+          <p>Day Streak </p> 
+          <p>Habit 2:</p>
+          <p> Take Meds</p> 
+          <button onclick="H2addOne()" type="button"> Increase Streak</button> 
+        </div>
+        
+        
+        <div> 
+          <h4>  <script> document.write(streakThree)</script> </h4> 
+          <p>Day Streak </p> 
+          <p>Habit 3:</p>
+          <p> Drink Water</p>
+          <button onclick="H3addOne()" type="button"> Increase Streak</button> 
+        </div>
+
+        <div> 
+          <h4>  <script> document.write(streakFour)</script> </h4> 
+          <p>Day Streak </p> 
+          <p>Habit 4:</p>
+          <p> Not Habit Added Yet</p>
+          <button onclick="H4addOne()" type="button"> Increase Streak</button>
+        </div>
+
+        <div> 
+          <h4>  <script> document.write(streakFive)</script> </h4> 
+          <p>Day Streak </p> 
+          <p>Habit 5:</p>
+          <p> No Habit Added Yet</p>
+          <button onclick="H5addOne()" type="button"> Increase Streak</button> 
+        </div>
+        
+          <div> 
+            <h4>  <script> document.write(streakSix)</script> </h4> 
+            <p>Day Streak </p> 
+            <p>Habit 6:</p>
+            <p> No Habit Added Yet</p>
+            <button onclick="H6addOne()" type="button"> Increase Streak</button> 
+          </div>
+       </div>
     </main>
     
 </body>
 </html>
+
