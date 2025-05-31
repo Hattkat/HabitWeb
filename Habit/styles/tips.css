@@ -1,0 +1,89 @@
+
+
+body{
+    font-size: 20;
+    background-color: #c8d8e4;
+}
+
+.grid-container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: minmax(100px, 35%) 3fr 1fr;
+    grid-template-rows: 100px 1fr 50px;
+}
+
+h1{
+    font-size: 2em;
+    color: black;
+    margin-left: 40px;
+    text-align: center;
+    
+}
+
+h2{
+    font-size: 1.6em;
+    color: black;
+    margin-left: 40px;
+    text-align: center;
+    
+}
+
+
+header{
+    grid-column: 2/6;
+    padding-left: 2rem;
+    background-color: #ffffff;
+    color: black;
+}
+
+main{
+    padding: 1rem 2rem;
+    background-color: #f2f2f2;
+    overflow-y: scroll;
+}
+
+nav{
+    grid-row: 1/4;
+    background-color: #2b6777;
+    color: black;
+    font-weight: bold;
+}
+nav ul{
+    list-style-type: none;
+    padding: 1em;
+}
+nav li{
+    margin-bottom: 2em;
+}
+
+
+
+/* 
+    Colour Scheme
+        #2b6777 - darker blue   
+        #c8d8e4 - lighter blue/grey
+        #ffffff - pure white
+        #f2f2f2 - greywhite
+*/
+
+/*.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+}
+
+.container > div{
+    background-color: #f2f2f2;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.square{
+    width: 100%;
+    text-align: center;
+}
+
+#sq1{
+    background-color: #2b6777;
+}
+    */
