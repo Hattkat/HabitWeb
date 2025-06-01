@@ -5,6 +5,7 @@
 		<link href="styles/styles.css" type="text/css" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- installation of Font Awesome: https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
 		<script src="scripts/script.js"></script>
 		<title>Habit Keeper</title>
 		
@@ -12,65 +13,50 @@
 </head>
 
 
-<body>
 
+<body onload="mainPageStart()">
+
+	
+
+ 
 	<header>
 		<h1> Habit Tracker</h1>
 		
 
 
 	</header>
-	
-	<div class="grid-container">
-		<nav>
-			<h2> Your Triumps</h2>
-			<li> Trophy One </li>
-			<li> Trophy Two </li>
-			<li> Trohpy Three </li>
-		</nav>
-	
+
+	<div class="row">
+		<div class="column" style="background-color: #c8d8e4;">
+			<h2> Your Triumphs </h2>
+			<li> Your Current Streak is </li>
+			<li id="Bullet1"> Create Your First Habit </li>
+			<li id="Bullet2"> 1 Week Streak</li>
+			<li id="Bullet3"> 1 Month Streak</li>
+		</div>
+		<div class="column" style="background-color: #deebf7;">
+			<h2>Quick Links</h2>
+			<p> 
+				<li><button onclick="LinkToHabits()" type="button"> <i class=" fa fa-repeat fa-4x"> </i> </button> My Habits </li>
+				<li><button onclick="LinkToTips()" type="button"> <i class="fa fa-lightbulb-o fa-5x"></i> </button> Tips and Links</li>
+				
+		</div>
+			
+		<div id="column3" class="column" style="background-color: #c8d8e4;">
+			<h2>Quick Habits</h2>
+			<canvas id="myCanvas" width="500" height="1" background="200"></canvas>
+			
+			
+			
+		</div>
+
+</div>
 
 	
-	<main>
-		<h2> Quick Links</h2>
-		
-		<li><button onclick="LinkToHabits()" type="button"> <i class=" fa fa-repeat fa-2x"> </i> </button> My Habits </li>
-		<li><button onclick="LinkToInsights()" type="button"> <i class="fa fa-line-chart fa-2x"></i> </button> My Insights</li>
-		<li><button onclick="LinkToTips()" type="button"> <i class="fa fa-lightbulb-o fa-2x"></i> </button> Tips and Links</li>
-		<li><button onclick="CreateHabit()" type="button"> <i class="fa fa-plus fa-2x"> </i> </button> Add New Habit</li>
-		
-		
-	</main>	
-
-	<aside>
-		<h2> Quick Habits</h2>
-	</aside>
-
-
-	<div id="nav">
-		
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="habit.html">My Habits</a></li>
-			<li><a href="insights.html"> Insights</a></li>
-			<li><a href="tips.html"> Tips</a></li>
-		</ul>
-	</div>
-
-	</div>
 </body>
 </html>
 
 
 		
 
-		
-		<!--<div class="container">
-			<div class="square" id="sq1"><span>Trophies</span></div>
-			<div class="square" id="sq2"><span>Quick Links</span>
-			<li><a href="habit.html"> My Habits</a> </li></div>
-			<div class="square" id="sq3"><span>Habits</span></div>
-		</div>
-	-->
-	
 		

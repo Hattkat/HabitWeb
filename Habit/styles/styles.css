@@ -39,7 +39,7 @@ main{
     grid-row: 1/4;
     padding: 1rem 2rem;
     background-color: #c8d8e4;
-    
+   
 }
 
 nav{
@@ -70,6 +70,29 @@ aside{
     background-color: #c8d8e4;
 }
 
+
+
+.grid{
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+div > div{
+    padding: 1em;
+    background-color: #f2f2f2;
+}
+
+.column{
+    float: left;
+    width: 33.33%
+}
+
+.row:after{
+    content:"";
+    display: table;
+    clear: both;
+}
 
 /* 
     Colour Scheme
@@ -102,7 +125,7 @@ aside{
     border: 1px solid #333333
 }
 .square span{
-    line-height: 20em
+    line-height: 5em
 }
 
 #sq1{
