@@ -23,23 +23,16 @@ h1{
 h2{
     font-size: 1.6em;
     color: black;
-    margin-left: 10px;
     text-align: left;
 
 }
 
-p{
-    font-size: 0.8em;
-    color: black;
-    margin-left: 10px;
-    text-align: left;
-}
 
 
 header{
     grid-column: 2/6;
-    padding-left: 2rem;
-    background-color: #c8d8e4;
+    padding-left: 0.5rem;
+    background-color: #ffffff;
     color: black;
 }
 
@@ -62,13 +55,21 @@ nav ul{
     padding: 1em;
 }
 nav li{
-    margin-bottom: 3em;
+    margin-bottom: 1em;
 }
 
 li{
     list-style-type: none;
 }
 
+
+p{
+    font-size: 0.8em;
+    color: black;
+    margin-left: 10px;
+    text-align: left;
+    font-weight: normal;
+}
 
 
 /* 
@@ -79,24 +80,3 @@ li{
         #f2f2f2 - greywhite
 */
 
-/*.container{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 20px;
-}
-
-.container > div{
-    background-color: #f2f2f2;
-    font-size: 1.5em;
-    text-align: center;
-}
-
-.square{
-    width: 100%;
-    text-align: center;
-}
-
-#sq1{
-    background-color: #2b6777;
-}
-    */

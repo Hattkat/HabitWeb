@@ -8,12 +8,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<!-- installation of Font Awesome: https://www.w3schools.com/icons/fontawesome_icons_intro.asp -->
 		<script src="scripts/script.js"></script>
-    <script src="scripts/streakOne.js"></script>
-    <script src="scripts/streakTwo.js"></script>
-    <script src="scripts/streakThree.js"></script>
-    <script src="scripts/streakFour.js"></script>
-    <script src="scripts/streakFive.js"></script>
-    <script src="scripts/streakSix.js"></script>
+  
   </head>
 
 
@@ -44,6 +39,9 @@
 
     <button onclick="clearAllHabits()" type="button">Clear All</button>
     <button onclick="refreshAllHabits()" type="button"> Refresh</button>
+     <button class="btn btn-outline-secondary btn-sm" id="exportHistory" onclick="exportHistory()">Export History</button > 
+      <a id="exportHistoryLink" style="display: none;">Export</a>
+    <button onclick="importHistory()" type="button">Import History</button>
 
 
 
@@ -52,57 +50,6 @@
        
        <div class="grid" id="habitGrid"> 
 
-         <!--
-         <div> <h4 id="streakOne">  <script> updateDisplay('streakOne', 0) </script> </h4> 
-          <p>Day Streak </p> 
-          <p>Habit 1:</p>
-          <p> Wash Hair</p>
-          <button onclick="addOne()" type="button"> Increase Streak</button>
-        </div>
-        
-       
-        <div> 
-          <h4 id="streakTwo">  <script> updateDisplay('streakTwo', 0) </script> </h4> 
-          <p>Day Streak </p> 
-          <p>Habit 2:</p>
-          <p> Take Meds</p> 
-          <button onclick="H2addOne()" type="button"> Increase Streak</button> 
-        </div>
-        
-        
-        <div> 
-          <h4>  <script> document.write(streakThree)</script> </h4> 
-          <p>Day Streak </p> 
-          <p>Habit 3:</p>
-          <p> Drink Water</p>
-          <button onclick="H3addOne()" type="button"> Increase Streak</button> 
-        </div>
-
-        <div> 
-          <h4>  <script> document.write(streakFour)</script> </h4> 
-          <p>Day Streak </p> 
-          <p>Habit 4:</p>
-          <p> Not Habit Added Yet</p>
-          <button onclick="H4addOne()" type="button"> Increase Streak</button>
-        </div>
-
-        <div> 
-          <h4>  <script> document.write(streakFive)</script> </h4> 
-          <p>Day Streak </p> 
-          <p>Habit 5:</p>
-          <p> No Habit Added Yet</p>
-          <button onclick="H5addOne()" type="button"> Increase Streak</button> 
-        </div>
-        
-          <div> 
-            <h4>  <script> document.write(streakSix)</script> </h4> 
-            <p>Day Streak </p> 
-            <p>Habit 6:</p>
-            <p> No Habit Added Yet</p>
-            <button onclick="H6addOne()" type="button"> Increase Streak</button> 
-          </div>
-
-        -->
 
        </div>
     </main>
